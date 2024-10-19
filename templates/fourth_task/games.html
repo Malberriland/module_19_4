@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Games</title>
+</head>
+<body>
+        {% extends "C:\Users\Гимназия1\Urban_projects\Module19\templates\fourth_task\menu.html" %}
+        {% block pagename %}
+        <h1>Игры</h1>
+        {% endblock %}
+
+        {% block menu %}
+        {{block.super}}
+        {% endblock %}
+
+        {% block context %}
+        <table align="left">
+        {% for game in games %}
+        <tr>{{game.title}} | {{game.description}} | Стоимость: {{game.cost}} <button> Купить </button></tr><br>
+        {% endfor %}
+        </table>
+        {% endblock %}
+
+</body>
+</html>

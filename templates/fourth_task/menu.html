@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+</head>
+<body>
+    <header>
+        {% block pagename %}
+
+        {% endblock %}
+    </header>
+
+    <menu>
+        {% block menu %}
+        <p><button>
+            <a href="/platform/">Магазин</a>
+        </button></p>
+
+        <p><button>
+            <a href="/platform/games">Игры</a>
+        </button></p>
+
+        <p><button>
+            <a href="/platform/cart">Корзина</a>
+        </button></p>
+        {% endblock %}
+    </menu>
+
+    <main>
+        {% block context %}
+
+        {% endblock %}
+    </main>
+
+
+</body>
+</html>
